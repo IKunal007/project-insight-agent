@@ -1,6 +1,6 @@
 from pprint import pprint
 
-from agent.priority_engine import prioritize_project
+from agent.execution_planner import generate_execution_plan
 
 
 project_text = """
@@ -9,10 +9,10 @@ for startups that can analyze resumes,
 rank candidates, and generate interview summaries.
 """
 
-print("Running Priority Reasoning...\n")
+print("Running Execution Planner...\n")
 
-result = prioritize_project(project_text)
+result = generate_execution_plan(project_text)
 
-print("\n=== PRIORITY ANALYSIS RESULT ===\n")
+print("\n=== EXECUTION PLAN ===\n")
 
 pprint(result)
