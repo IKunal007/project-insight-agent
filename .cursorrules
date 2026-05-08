@@ -1,0 +1,31 @@
+# Project Purpose
+Project Insight Agent
+
+A local-first AI workflow agent for structured project analysis,
+execution planning, architecture recommendations,
+and priority reasoning.
+
+# Architecture Rules
+- Keep modules independent
+- Separate prompts from logic
+- Use structured outputs
+- Avoid hardcoded prompts
+
+# Coding Standards
+- Use type hints
+- Keep functions small and focused
+- Prefer readability over cleverness
+- Use descriptive function names
+
+# AI Workflow Philosophy
+- Structured reasoning over raw intelligence
+- Deterministic pipelines over autonomous loops
+- Modularity over complexity
+
+# Security
+- Never commit secrets
+- Use environment variables only
+
+# Evaluation
+- Keep benchmarks reproducible
+- Maintain structured scoring
