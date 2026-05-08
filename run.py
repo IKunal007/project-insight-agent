@@ -1,6 +1,6 @@
-from pprint import pprint
-
-from agent.execution_planner import generate_execution_plan
+from agent.orchestrator import run_full_analysis
+from agent.report_generator import generate_final_report
+from agent.evaluation import evaluate_analysis
 
 
 project_text = """
@@ -9,10 +9,18 @@ for startups that can analyze resumes,
 rank candidates, and generate interview summaries.
 """
 
-print("Running Execution Planner...\n")
+print("Running Full Project Insight Analysis...\n")
 
-result = generate_execution_plan(project_text)
+analysis_result = run_full_analysis(project_text)
 
-print("\n=== EXECUTION PLAN ===\n")
+final_report = generate_final_report(analysis_result)
 
-pprint(result)
+print("\n=== FINAL REPORT ===\n")
+
+print(final_report)
+
+evaluation_result = evaluate_analysis(analysis_result)
+
+print("\n=== EVALUATION ===\n")
+
+print(evaluation_result)
