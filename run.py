@@ -1,6 +1,6 @@
 from pprint import pprint
 
-from agent.risk_analyzer import analyze_risks
+from agent.priority_engine import prioritize_project
 
 
 project_text = """
@@ -9,10 +9,10 @@ for startups that can analyze resumes,
 rank candidates, and generate interview summaries.
 """
 
-print("Running Risk Analysis...\n")
+print("Running Priority Reasoning...\n")
 
-result = analyze_risks(project_text)
+result = prioritize_project(project_text)
 
-print("\n=== RISK ANALYSIS RESULT ===\n")
+print("\n=== PRIORITY ANALYSIS RESULT ===\n")
 
 pprint(result)
