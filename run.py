@@ -1,4 +1,6 @@
-from agent.goal_extractor import extract_goals
+from pprint import pprint
+
+from agent.risk_analyzer import analyze_risks
 
 
 project_text = """
@@ -7,6 +9,10 @@ for startups that can analyze resumes,
 rank candidates, and generate interview summaries.
 """
 
-result = extract_goals(project_text)
+print("Running Risk Analysis...\n")
 
-print(result)
+result = analyze_risks(project_text)
+
+print("\n=== RISK ANALYSIS RESULT ===\n")
+
+pprint(result)
